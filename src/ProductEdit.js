@@ -60,18 +60,15 @@ function ProductEditInner(props) {
   return (
     <div>
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
                 <NavLink className={"navbar-brand"} to='/'>MediaTech</NavLink>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                <div className="navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
                                 <NavLink className={"btn"} to='/'>Главная</NavLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <NavLink className={"btn"} to='/'>Тарифы</NavLink>
                             </li>
                         </ul>
@@ -89,17 +86,17 @@ function ProductEditInner(props) {
                     <div className='widget-content'>
 
                     <div className='widget-content-wraper'>
-                        <label for='name'>Тариф</label>
+                        <label htmlFor='name'>Тариф</label>
                         <input type='text' value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' className='form-control input'/>
 
                         <br />
 
-                        <label for='description'>Описание</label>
+                        <label htmlFor='description'>Описание</label>
                         <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Description' className='form-control input' />
 
                         <br />
 
-                        <label for='price'>Цена</label>
+                        <label htmlFor='price'>Цена</label>
                         <input type='number' value={price} onChange={(e) => setPrice(e.target.value)} placeholder='Price' className='form-control input' />
                         
                         <br />

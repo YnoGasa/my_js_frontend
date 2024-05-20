@@ -69,18 +69,15 @@ class ProductAddInner extends React.Component {
   render() {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
                     <NavLink className={"navbar-brand"} to='/'>MediaTech</NavLink>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                    <div className="navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
                                 <NavLink className={"btn"} to='/'>Главная</NavLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <NavLink className={"btn"} to='/'>Тарифы</NavLink>
                             </li>
                         </ul>
@@ -97,13 +94,13 @@ class ProductAddInner extends React.Component {
                     <form onSubmit={this.onAddFormSubmit}>
                         <div className='widget-content'>
                             <div className='widget-content-wraper'>
-                                <label for='name'>Тариф</label>
+                                <label htmlFor='name'>Тариф</label>
                                 <input type='text' value={this.state.name} onChange={this.onNameChange} name='name' placeholder='Название тарифа' className='form-control input'/>
                                 <br />
-                                <label for='description'>Описание</label>
+                                <label htmlFor='description'>Описание</label>
                                 <input type='text' value={this.state.description} onChange={this.onDescriptionChange} name='description' placeholder='Описание тарифа' className='form-control input' />
                                 <br />
-                                <label for='price'>Цена</label>
+                                <label htmlFor='price'>Цена</label>
                                 <input type='number' value={this.state.price} onChange={this.onPriceChange} name='price' placeholder='Цена' className='form-control input' />
                                 <br />
                                 <input type='submit' className='btn btn-primary' value="Добавить" />
